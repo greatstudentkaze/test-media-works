@@ -19,5 +19,9 @@
   &--no-scroll {
     padding-right: 17px; // scrollbar imitation
     overflow-y: hidden;
+
+    @media (max-width: 1280px) {
+      padding-right: 0;
+    }
   }
 }

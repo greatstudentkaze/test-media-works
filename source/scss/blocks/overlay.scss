@@ -25,4 +25,8 @@
     min-height: 100vh;
     padding: 40px 0;
   }
+
+  @media (max-width: 465px) {
+    padding: 0;
+  }
 }

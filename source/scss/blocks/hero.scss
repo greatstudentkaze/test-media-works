@@ -5,6 +5,42 @@
   background-image: url("../img/hero-bg.png");
   background-position: right -10px top 57px;
   background-repeat: no-repeat;
+
+  @media (max-width: $desktop-width) {
+    background-size: 550px;
+    background-position: right -20px center;
+  }
+
+  @media (max-width: 1050px) {
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: 920px) {
+    background-size: 500px;
+    background-position: right -60px center;
+  }
+
+  @media (max-width: 850px) {
+    background-position: right -150px center;
+  }
+
+  @media (max-width: 670px) {
+    padding-bottom: 300px;
+
+    background-size: 70%;
+    background-position: center bottom;
+  }
+
+  @media (max-width: 520px) {
+    padding-top: 50px;
+    padding-bottom: 320px;
+
+    background-size: 400px;
+  }
+
+  @media (max-width: 380px) {
+    padding-top: 30px;
+  }
 }
 
 .hero__title {
@@ -15,6 +51,26 @@
   font-size: 50px;
   line-height: 60px;
   font-weight: 600;
+
+  @media (max-width: 1050px) {
+    max-width: 400px;
+  }
+
+  @media (max-width: 670px) {
+    max-width: 530px;
+  }
+
+  @media (max-width: 465px) {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  @media (max-width: 380px) {
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .hero__text {
@@ -25,6 +81,30 @@
   font-size: 24px;
   line-height: 32px;
   font-weight: 350;
+
+  @media (max-width: 1050px) {
+    max-width: 400px;
+  }
+
+  @media (max-width: 850px) {
+    max-width: 360px;
+  }
+
+  @media (max-width: 670px) {
+    max-width: 530px;
+  }
+
+  @media (max-width: 465px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 380px) {
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .hero__button {

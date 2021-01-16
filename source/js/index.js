@@ -29,4 +29,21 @@ const authPopup = () => {
   });
 };
 
+const menu = () => {
+  const menu = document.querySelector('.main-nav');
+
+  document.addEventListener('click', evt => {
+    const target = evt.target;
+    const isMenuButton = target.closest('.js-menu-btn');
+    const isOutsideMenu = !target.closest('.main-nav');
+
+    if (isMenuButton) {
+      menu.classList.toggle('main-nav--opened');
+    } else if (isOutsideMenu) {
+      menu.classList.remove('main-nav--opened');
+    }
+  });
+};
+
+menu();
 authPopup();

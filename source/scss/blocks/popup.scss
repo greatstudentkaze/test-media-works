@@ -3,7 +3,8 @@
 .popup {
   position: relative;
 
-  width: 490px;
+  width: 100%;
+  max-width: 490px;
   padding: 60px;
   padding-bottom: 55px;
 
@@ -21,6 +22,17 @@
   &--active {
     opacity: 1;
     transform: translate(0);
+  }
+
+  @media (max-width: 465px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 30px;
+
+    border-radius: 0;
   }
 }
 
