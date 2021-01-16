@@ -1,0 +1,28 @@
+@import "../variables";
+
+.registration {
+  margin-bottom: 185px;
+  padding: 70px;
+
+  color: $white;
+
+  background-image: url("../img/registration-bg.png"), $purple-gradient;
+  background-repeat: no-repeat;
+  background-position: right top 19px, 0 0;
+  border-radius: 10px;
+}
+
+.registration__text {
+  max-width: 558px;
+  margin: 0;
+  margin-bottom: 46px;
+
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 600;
+
+}
+
+.registration__button {
+  width: 222px;
+}
