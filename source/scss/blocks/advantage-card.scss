@@ -30,6 +30,13 @@
   &--convenience {
     background-image: url("../img/advantages/convenience.png");
   }
+
+  @media (max-width: 630px) {
+    padding-bottom: 223px;
+
+    background-position: center bottom 43px;
+    background-size: 150px;
+  }
 }
 
 .advantage-card__title {
@@ -40,6 +47,11 @@
   font-size: 22px;
   line-height: 29px;
   font-weight: 600;
+
+  @media (max-width: 630px) {
+    max-width: none;
+    text-align: center;
+  }
 }
 
 .advantage-card__description {
@@ -49,4 +61,11 @@
   font-size: 16px;
   line-height: 22px;
   color: $black-special;
+
+  @media (max-width: 630px) {
+    max-width: 340px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
 }

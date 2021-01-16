@@ -4,4 +4,14 @@
   max-width: $desktop-width;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    max-width: none;
+    padding: 0 30px;
+  }
+
+  @media (max-width: 465px) {
+    padding: 0 20px;
+  }
 }
