@@ -20,6 +20,17 @@
 }
 
 @font-face {
+  font-family: "Whitney";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+      local("Whitney Light"),
+      url("../fonts/Whitney-Light.woff2") format("woff2"),
+      url("../fonts/Whitney-Light.woff") format("woff");
+}
+
+@font-face {
   font-family: "Segoe UI";
   font-style: normal;
   font-weight: 400;
