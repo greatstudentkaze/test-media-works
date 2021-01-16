@@ -1,0 +1,28 @@
+@import "../variables";
+@import "../mixins";
+
+.advantages {
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+  color: $black;
+}
+
+.advantages__text {
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 600;
+}
+
+.advantages__list {
+  @include reset-list;
+
+  display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
