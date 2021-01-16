@@ -1,0 +1,17 @@
+@import "../variables";
+@import "../mixins";
+
+.site-list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-list__item {
+
+  a {
+    @include style-nav-list__item-link;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../variables";
+@import "../mixins";
+
+.user-list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-list__item {
+  a {
+    @include style-nav-list__item-link;
+  }
+
+  &--login {
+    a {
+      padding-left: 56px;
+
+      background-image: url("../img/login.svg");
+      background-repeat: no-repeat;
+      background-size: 24px;
+      background-position: left 20px center;
+    }
+  }
+}
