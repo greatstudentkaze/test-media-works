@@ -3,3 +3,22 @@
   padding: 0;
   list-style-type: none;
 }
+
+@mixin style-nav-list__item-link {
+  display: inline-block;
+  padding: 20px;
+
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 300;
+  color: $white;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
