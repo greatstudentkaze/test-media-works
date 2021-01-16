@@ -1,0 +1,28 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: rgba(28, 24, 47, 0.3);
+
+  overflow-y: scroll;
+  transition-delay: 0.4s;
+
+  &--active {
+    display: flex;
+  }
+
+  @media (max-height: 600px) {
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 0;
+  }
+}

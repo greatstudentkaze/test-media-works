@@ -22,7 +22,7 @@
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item user-list__item--login">
-            <a href="#">Войти</a>
+            <a class="js-login-button" href="#">Войти</a>
           </li>
         </ul>
       </nav>
@@ -80,5 +80,27 @@
       <a class="button registration__button" href="#">Регистрация</a>
     </section>
   </main>
+
+  <div class="overlay">
+    <section class="popup">
+      <button class="popup__close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <h2 class="popup__title">Авторизация</h2>
+      <form class="auth-form" method="post" action="https://echo.htmlacademy.ru">
+        <div class="auth-form__group">
+          <label for="email" class="auth-form__label">E-mail</label>
+          <input class="auth-form__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+        </div>
+        <div class="auth-form__group">
+          <label for="password" class="auth-form__label">Пароль</label>
+          <input class="auth-form__input" type="password" name="password" id="password" placeholder="Введите пароль" required>
+        </div>
+        <button class="button" type="submit">Войти</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="js/index.min.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,58 @@
+@import "../variables";
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+
+  color: $black;
+}
+
+.auth-form__group {
+  flex-grow: 1;
+  margin-bottom: 18px;
+
+  &:last-of-type {
+    margin-bottom: 34px;
+  }
+}
+
+.auth-form__label {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 350;
+}
+
+.auth-form__input {
+  display: block;
+  width: 100%;
+  padding: 17px 12px;
+
+  font: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+  color: $black;
+
+  border: 1px solid $gray-border;
+  border-radius: 4px;
+
+  transition: 0.4s;
+
+  &::placeholder {
+    color: $gray-special;
+    opacity: 1;
+  }
+
+  &[type="email"] {
+    background-position: right 11px center;
+    background-repeat: no-repeat;
+    background-size: 14px;
+
+    &:valid {
+      background-image: url("../img/valid.svg");
+    }
+  }
+}
