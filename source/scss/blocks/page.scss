@@ -1,0 +1,18 @@
+@import "../variables";
+
+.page,
+.page__body {
+  box-sizing: border-box;
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: normal;
+
+  background-color: $white;
+  cursor: default;
+}
