@@ -1,0 +1,52 @@
+@import "../variables";
+
+.advantage-card {
+  max-width: 570px;
+  min-height: 235px;
+  padding: 43px 40px;
+
+  font-family: $font-secondary;
+  color: $black;
+
+  background-color: $gray;
+  border-radius: 6px;
+
+  background-position: right 10px top 21px;
+  background-size: 193px;
+  background-repeat: no-repeat;
+
+  &--saving-time {
+    background-image: url("../img/advantages/saving-time.png");
+  }
+
+  &--no-delays {
+    background-image: url("../img/advantages/no-delays.png");
+  }
+
+  &--max-info {
+    background-image: url("../img/advantages/max-info.png");
+  }
+
+  &--convenience {
+    background-image: url("../img/advantages/convenience.png");
+  }
+}
+
+.advantage-card__title {
+  max-width: 292px;
+  margin: 0;
+  margin-bottom: 22px;
+
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 600;
+}
+
+.advantage-card__description {
+  max-width: 292px;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $black-special;
+}
