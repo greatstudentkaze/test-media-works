@@ -5,6 +5,11 @@
   background-image: url("../img/hero-bg.png");
   background-position: right -10px top 57px;
   background-repeat: no-repeat;
+  background-size: 689px 442px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-bg@2x.png");
+  }
 
   @media (max-width: $desktop-width) {
     background-size: 550px;

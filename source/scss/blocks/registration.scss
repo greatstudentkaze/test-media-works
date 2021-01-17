@@ -7,9 +7,14 @@
   color: $white;
 
   background-image: url("../img/registration-bg.png"), $purple-gradient;
+  background-size: 732px 340px, auto;
   background-repeat: no-repeat;
   background-position: right top 19px, 0 0;
   border-radius: 10px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/registration-bg@2x.png"), $purple-gradient;
+  }
 
   @media (max-width: $desktop-width) {
     margin-bottom: 100px;

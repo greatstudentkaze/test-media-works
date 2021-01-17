@@ -17,18 +17,34 @@
 
   &--saving-time {
     background-image: url("../img/advantages/saving-time.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages/saving-time@2x.png");
+    }
   }
 
   &--no-delays {
     background-image: url("../img/advantages/no-delays.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages/no-delays@2x.png");
+    }
   }
 
   &--max-info {
     background-image: url("../img/advantages/max-info.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages/max-info@2x.png");
+    }
   }
 
   &--convenience {
     background-image: url("../img/advantages/convenience.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages/convenience@2x.png");
+    }
   }
 
   @media (max-width: 630px) {
