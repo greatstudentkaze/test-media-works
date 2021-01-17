@@ -16,4 +16,13 @@
   align-items: center;
   padding-top: 18px;
   padding-bottom: 18px;
+  padding-right: 10px;
+
+  @media (max-width: $desktop-width) {
+    padding-right: 30px;
+  }
+
+  @media (max-width: 465px) {
+    padding-right: 20px;
+  }
 }
